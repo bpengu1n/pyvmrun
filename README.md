@@ -8,8 +8,10 @@ versions 6.0 and above.
 
 ## Basic Usage
 ```python
-import pyvmrun
-vm = pyvmrun.Vmrun( 'full/path/to/your/foo.vmx' )
+from pyvmrun import PyVmrun
+vm = PyVmrun.list()[0] 
+# or 
+vm = PyVmrun( 'full/path/to/your/foo.vmx' )
 vm.start()
 vm.suspend()
 vm.stop()
